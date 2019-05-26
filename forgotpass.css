@@ -1,0 +1,128 @@
+/*############################## This code is written by Norhan El-Deeb @2019 ###################################*/
+
+/*----------------------------------------- Forgot Password page style -----------------------------------------------*/
+body{
+    margin: 0;
+    padding: 0;
+    background: url(./images/4.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.forgotpass-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: 455px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .8);
+}
+
+.user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+
+h2{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #efed40;
+    text-align: center;
+}
+
+.forgotpass-box input{
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.forgotpass-box input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+::placeholder{
+    color: rgb(255, 255, 255,.5)
+}
+
+.forgotpass-box input[type="button"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #262626;
+    font-size: 16px;
+    background: #efed40;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.forgotpass-box input[type="button"]:hover{
+    background: #058E3F;
+    color: #fff;
+}
+
+.forgotpass-box a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.forgotpass-box a:hover{
+    color: red;
+}
+
+/*--------------------------------------- The Keyframes for the popup message style ----------------------------------*/
+#msg {
+    visibility: hidden;
+    min-width: 290px;
+    background-color: #efed40;
+    color:  #262626;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    top: 30px;
+    font-size: 17px;
+    margin-right:30px;
+}
+
+#msg.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}

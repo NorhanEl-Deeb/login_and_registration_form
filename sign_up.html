@@ -1,0 +1,41 @@
+<!-- ############################## This code is written by Norhan El-Deeb @2019 ################################### -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Import google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Import css file  -->
+    <link rel="stylesheet" href="sign_up.css">
+    <title>University website</title>
+    
+</head>
+<body>
+    <!--------------------------------------------- Sign up page ----------------------------------------------------->
+    <div class="signup-box">
+        <img src="./images/sign-up-icon.png" class="user">
+        <div class="sign-up">
+            <form>
+                <h2>REGISTRATION</h2>
+                <input type="text" name="student" id="fill_1" placeholder="Enter your ID number" pattern="[0-9]{6}" maxlength="6" required><br><br>
+                <input type="password" name="pass" id="fill_2" placeholder="Password" required><br><br>
+                <input type="password" name="pass" id="fill_3" placeholder="Confirm password"required>
+                <span id="error_2" style="color: red;"></span><br><br>
+                <input type="email" name="email" id="fill_4" placeholder="Enter your personal Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+                <input type="button" value="Sign up" onclick="check()"><br>
+                <span id="error" style="color: red;"></span><br>
+                <div id="msg">Congratulations you have Signed up successfully!</div>
+                <a href="index.html">Already have an account? Login</a>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Import Javascript file -->
+    <script src="sign_up.js"></script>
+
+
+</body>
+</html>

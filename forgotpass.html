@@ -1,0 +1,34 @@
+<!-- ############################## This code is written by Norhan El-Deeb @2019 ################################### -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Import google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Import css file  -->
+    <link rel="stylesheet" href="forgotpass.css">
+    <title>University website</title>
+</head>
+<body>
+     <!------------------------------------------- Forgot password page ---------------------------------------------->
+     <div class="forgotpass-box">
+        <img src="./images/fp1.png" class="user">
+        <form>
+            <h2>Enter the Email that you used in registering your account 
+                and we will send a link to reset your password.</h2>
+            <input type="email" name="email" id="fill" placeholder="Enter your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/><br/><br/>
+            <input type="button" value="Send" onclick="check()"/><br/>
+            <span id="error" style="color: red;"></span><br>
+            <a href="index.html">Go back to Home page</a><br/><br/>
+            <div id="msg">Link has been sent to your email successfully!!</div>
+     </div> 
+     
+     
+     <!-- Import Javascript file -->
+    <script src="forgotpass.js"></script>
+
+
+</body>
+</html>

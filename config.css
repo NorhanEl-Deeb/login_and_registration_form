@@ -1,0 +1,49 @@
+/*############################## This code is written by Norhan El-Deeb @2019 ###################################*/
+
+/*------------------------------------------ Configuration page style -----------------------------------------------*/
+body{
+    margin: 0;
+    padding: 0;
+    background: url(./images/3.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color: #efed40;
+    padding: 58px;
+    font-weight: bold;
+}
+
+a:hover{
+    color: red;
+}
+
+.config{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 360px;
+    height: 300px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .8);
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+
+h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+}
+
